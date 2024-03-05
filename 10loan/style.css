@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+:root {
+    --primary-color: #b11116;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Container */
+.container {
+    max-width: 720px;
+    margin: 50px auto;
+    border: 3px solid var(--primary-color);
+}
+
+form {
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+h2,
+label {
+    display: block;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+input[type="number"] {
+    width: 320px;
+    border: 2px solid #dedede;
+    height: 46px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+input[type="number"]:focus {
+    /* color:  #dedede; */
+    background-color: white;
+    outline: 0;
+   
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: #b11116;
+    border-color: #b11116;
+    color: #fff;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 30px;
+}
+
+/* Table Container */
+.table-container {
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.loan-table-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+}
+
+.loan-table-header > * {
+    border: 1px solid #dedede;
+}
+
+.row1 {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row2 {
+    text-align: center;
+}
+
+/* Loan Body */
+.loan-table-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.loan-table-term > * {
+    border: 1px solid #dedede;
+    width: 100%;
+    text-align: center;
+}
+
+.loan-table-installments > * {
+    border: 1px solid #dedede;
+    width: 100%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
